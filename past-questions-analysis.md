@@ -27,6 +27,18 @@
   - Bonus revenue if high
   - Top seller vs regular (comparison to category average)
 
+## Exam 4 (2024 Summer)
+- **JS**: Electricity bill calculator
+  - Location/area rate table
+  - Surcharge tiers (0% / 5% / 10%)
+  - Strict input validation + alert with 2 decimals
+- **PHP**: Average speed (uphill time + speed up/down)
+- **PHP**: Password strength rules (Strong/Medium/Poor/Very Poor)
+- **MySQL/PHP‑MySQL**: Sales table analytics
+  - Total quantity + revenue per product
+  - Top 2 days by total revenue
+  - Average quantity per product with “sold on ≥2 days” filter
+
 ---
 
 ## Recurring Topics (Most Frequent)
@@ -38,11 +50,14 @@
    - `GROUP BY` with `COUNT()` or `SUM()`
    - `UPDATE` with conditions
    - Sorting grouped results with `ORDER BY`
-   - Sometimes uses subquery/average for labels
+  - Sometimes uses subquery/average for labels
+  - Date-based aggregates + `LIMIT` for top‑N
+  - `HAVING COUNT(DISTINCT ...)` filters
 
 3) **JS UI logic** (if asked)
    - Input + feedback + ranges
    - Attempts limit message
+  - Validation + tiered billing/surcharge
 
 ---
 
@@ -55,6 +70,8 @@
   - One conditional `UPDATE`
   - One bonus/cap update
   - One grouped popularity query
+  - Top‑N by date or product
+  - Filtered averages with `HAVING`
 
 ---
 
@@ -64,3 +81,5 @@
 - “wasted money” → leftover × (price per slot or per seat)
 - “grouped totals” → `GROUP BY` + `COUNT/SUM`
 - “update with rules” → `UPDATE ... WHERE ...`
+- “top 2 days” → `GROUP BY sale_date ORDER BY total DESC LIMIT 2`
+- “min day count” → `HAVING COUNT(DISTINCT sale_date) >= 2`

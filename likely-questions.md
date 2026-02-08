@@ -19,6 +19,19 @@
    - Ranged feedback messages
    - Attempts counter & “too many attempts” message
 
+4) **Electricity bill calculator (JS + validation)**
+  - Rate table by location (Dhaka/Chattogram/Other) + area type (Urban/Rural)
+  - Surcharge tiers (none/5%/10%)
+  - Strict input validation and alert with 2 decimals
+
+5) **PHP function problems (math + time/distance)**
+  - Average speed with uphill time + speed up/down
+  - Return integer result
+
+6) **PHP password strength rules**
+  - Strong/Medium/Poor/Very Poor by regex checks
+  - Special ending character (e.g., ends with `*`)
+
 ## Common Variations
 - **Wasted money** formula changes:
   - Fixed price per unit → use per‑slot cost = unitPrice / capacity
@@ -32,9 +45,13 @@
   - COUNT per grade/rating
   - SUM revenue per category
   - COUNT per course/department
+  - TOP 2 days by revenue (GROUP BY date + ORDER BY + LIMIT)
+  - Averages with day-count filter (`HAVING COUNT(DISTINCT sale_date) >= 2`)
 
 ## Most Likely Topics to Appear Again
 - `ceil()` calculation problems in PHP
 - SQL `GROUP BY` + `COUNT()` or `SUM()`
 - SQL `UPDATE` with conditional rules
 - PHP‑MySQL output loops (`fetch_assoc`)
+- JS validation + tiered charges (utility bill)
+- PHP regex/string checks (password rules)
